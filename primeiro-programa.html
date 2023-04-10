@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selecionando Elementos</title>
+
+        <style>
+
+            .container{
+                display:flex;
+                flex-direction: column;
+                margin: 0px auto;
+                box-sizing: border-box;
+                padding: 20px;
+                width:40%;
+                height: auto;
+                align-items: center;
+                justify-content: space-between;
+                box-shadow: 02px 8px 30px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+
+            input{
+                width: 100%;
+                padding: 10px;
+                color: #2c2c2c;
+                border-radius: 8px;
+                border: 1px solid #000;
+                outline: 0px;
+            }
+
+            .container-btn{
+                margin-top: 2rem;
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            button{
+                padding: 8px;
+                font-size: 1.1rem;
+                border-radius: 8px;
+                border:0px;
+                outline: 0px;
+                background: linear-gradient(to bottom, #70b5e0, #665fee);
+                transition: 0.4s all;
+                
+            }
+            
+            #submit:hover{
+                background:#0011c6;
+                color:#fff;
+                transform: scale(1.1);
+            }
+            
+            #limpar{
+                background: linear-gradient(to bottom, #f27b7b, #b42424);
+                transition: 0.4s all;
+            }
+
+            #limpar:hover{
+                background: #780000;
+                color: #fff;
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 id="titulo">Título da página</h2>
+            <input type="text" placeholder="Insira o texto">
+            
+            <div class="container-btn">
+                <button id="submit">Clique para trocar o texto do título</button>
+                <button id="limpar">Limpar</button>
+            </div>
+        </div>
+
+        <script>
+
+            function modificandoTitulo(){
+                titulo.textContent = input.value;
+               // console.log(input.value);
+            }
+
+            function limpar(){
+                titulo.textContent = "Insira no campo abaixo o texto que deseja modificar."
+                input.value = "";
+            }
+
+            var input =document.querySelector("input");
+            var titulo = document.getElementById("titulo");
+            var buttonEnviar = document.getElementById("submit");
+            var buttonLimpar = document.getElementById("limpar");
+            
+            buttonEnviar.onclick = modificandoTitulo;
+            buttonLimpar.onclick = limpar;
+           //console.log(titulo.textContent);
+        </script>
+    </body>
+</html>
