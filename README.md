@@ -3,6 +3,10 @@
 
 <br>
 
+
+<img src="img/Logo.png" style="border-radius: 600px;"/>
+</center>
+
 # Perfumaria Essência
 
 ## ⏳ Status do Projeto
