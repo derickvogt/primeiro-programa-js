@@ -1,6 +1,6 @@
-<span style="color: green; display: block;">
+<div style="color: green; display: block;">
 teste
-</span>
+</div>
 
 (/img/Logo.png){#identifier .header}
 
