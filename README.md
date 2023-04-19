@@ -1,14 +1,8 @@
-<style>
-    .header{
-        width: 100%;
-        text-align: center;
-        background: #00a470;
-    }
-</style>
-
-<div id="identifier" class="header">
-<img src="img/Logo.png" style="height: 150px">
+<div style="color: green; background: yellow">
+teste
 </div>
+
+(/img/Logo.png){#identifier .header}
 
 <br>
 
