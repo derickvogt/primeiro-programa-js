@@ -1,7 +1,14 @@
+<style>
+    .header{
+        width: 100%;
+        text-align: center;
+        background: #00a470;
+    }
+</style>
 
-<span  style="text-align: center; background: #00a470; width: 100%; display: block;">
+<div id="identifier" class="header">
 <img src="img/Logo.png" style="height: 150px">
-</span>
+</div>
 
 <br>
 
