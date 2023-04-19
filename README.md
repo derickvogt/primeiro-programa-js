@@ -1,4 +1,4 @@
-<div style="color: green; background: yellow;">
+<div style="color: green">
 teste
 </div>
 
