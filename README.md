@@ -1,12 +1,30 @@
 
-<img src="img/Logo.png" style="border-radius: 50%">
+<style>
+img[src$="#block"] {
+  display: block;
+  margin: 0 auto;
+}
 
-<br>
+img[src$="#avatar"] {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 50%;
+}
 
+img[src$="#right"] {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
 
-<img src="img/Logo.png" style="border-radius: 600px;"/>
-</center>
+</style>
 
+![Block image](https://picsum.photos/id/1020/600/300#block)
+
+![Avatar](https://picsum.photos/id/219/300/300#avatar)
+
+![Align right](https://picsum.photos/id/564/500/300#right)
 # Perfumaria Essência
 
 ## ⏳ Status do Projeto
