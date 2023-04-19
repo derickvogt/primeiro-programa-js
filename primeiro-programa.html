@@ -48,25 +48,26 @@
                 font-size: 1.1rem;
                 border-radius: 8px;
                 border:0px;
+                font-weight: bold;
                 outline: 0px;
-                background: linear-gradient(to bottom, #70b5e0, #665fee);
+                background: linear-gradient(to bottom, #43a4e0, #918cef);
                 transition: 0.3s all;
                 
             }
             
             #submit:hover{
-                background:#0011c6;
+                background:linear-gradient(to bottom, #054ac1, #1f0160);
                 color:#fff;
                 transform: scale(1.05);
             }
             
             #limpar{
-                background: linear-gradient(to bottom, #f27b7b, #b42424);
+                background: linear-gradient(to bottom, #d39090, #aa4f4f);
                 transition: 0.3s all;
             }
 
             #limpar:hover{
-                background: #780000;
+                background: linear-gradient(to bottom, #ee0000, #680101);
                 color: #fff;
                 transform: scale(1.05);
             }
@@ -88,12 +89,13 @@
 
             function modificandoTitulo(){
                 titulo.textContent = input.value;
-               // console.log(input.value);
+               input.focus();
             }
 
             function limpar(){
                 titulo.textContent = "Insira no campo abaixo o texto que deseja modificar."
                 input.value = "";
+                input.focus();
             }
 
             var input =document.querySelector("input");
@@ -103,7 +105,6 @@
             
             buttonEnviar.onclick = modificandoTitulo;
             buttonLimpar.onclick = limpar;
-           //console.log(titulo.textContent);
         </script>
     </body>
 </html>
