@@ -1,8 +1,5 @@
-<div style="color: green; display: block;">
-teste
-</div>
 
-(/img/Logo.png){#identifier .header}
+<img src="img/Logo.png" style="border-radius: 50%">
 
 <br>
 
